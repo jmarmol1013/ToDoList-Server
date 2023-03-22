@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec 'babel-node src/server.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.3",
+    "express": "~4.16.1",
+    "firebase-admin": "^11.5.0",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "mongodb": "^5.1.0",
+    "morgan": "~1.9.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "nodemon": "^2.0.21"
+  }
+}
