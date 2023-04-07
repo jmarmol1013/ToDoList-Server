@@ -3,9 +3,9 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import * as admin from 'firebase-admin';
 import credentials from './credentials.json';
+import cors from 'cors'
 import { db } from './db';
 import { routes } from './routes';
-
 
 const uri = process.env.MONGODB_URI;
 
@@ -15,6 +15,7 @@ const app = express();
 const DB_NAME = 'ToDoList';
 
 app.use(bodyParser.json());
+app.use(cors({origin: 'http://localhost:3000'}));
 
 routes.forEach(route => {
     app[route.method](route.path, route.handler);
