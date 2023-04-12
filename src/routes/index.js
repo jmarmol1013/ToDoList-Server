@@ -5,7 +5,8 @@ import { createNoteRoute } from "./createNoteRoute";
 import { deleteNoteRoute } from "./deleteNoteRoute";
 import { editDoingNoteRoute } from "./editDoingNoteRoute";
 import { editDoneNoteRoute } from "./editDoneNoteRoute";
-
+import { getEditNoteRoute } from "./getEditNoteRoute";
+import {editNoteRoute} from './editNoteRoute'
 
 export const routes = [
     createUserRoute,
@@ -15,4 +16,6 @@ export const routes = [
     deleteNoteRoute,
     editDoingNoteRoute,
     editDoneNoteRoute,
+    getEditNoteRoute,
+    editNoteRoute,
 ];
