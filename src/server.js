@@ -15,7 +15,7 @@ const app = express();
 const DB_NAME = 'ToDoList';
 
 app.use(bodyParser.json());
-app.use(cors({origin: 'http://localhost:3000'}));
+app.use(cors({origin: 'https://listify.onrender.com'}));
 
 routes.forEach(route => {
     app[route.method](route.path, route.handler);
