@@ -15,7 +15,7 @@ const app = express();
 const DB_NAME = 'ToDoList';
 
 app.use(bodyParser.json());
-app.use(cors({origin: 'https://to-do-list-client.vercel.app/'}));
+app.use(cors({origin: 'https://to-do-list-client.vercel.app'}));
 
 routes.forEach(route => {
     app[route.method](route.path, route.handler);
